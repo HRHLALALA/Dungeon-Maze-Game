@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane fx:id="screen" onKeyPressed="#handleKey" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane fx:id="mapPane" gridLinesVisible="true" maxWidth="700.0" minHeight="200.0" minWidth="200.0" prefHeight="600.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <right>
+      <GridPane fx:id="itemPane" gridLinesVisible="true" onKeyPressed="#handleKey" prefWidth="250.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <RadioButton fx:id="arrowSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT">
+               <graphic>
+                  <ImageView fx:id="ArrowImg" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <toggleGroup>
+                  <ToggleGroup fx:id="itemchoices" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="bombSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fx:id="bombImg" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/bomb_unlit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="bounderSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fx:id="boulderImg" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/boulder.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="doorSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/closed_door.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="switchSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/floorswitch.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="hunterSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/Hunter.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="pitSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/Pit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="treasureSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.rowIndex="5">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/Treasure.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="cowardSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/Coward.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="houndSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/hound.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="invincibilitySelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/invinciblePotion.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="strategistSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/Strategist.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="playerSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/Player.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="exitSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="hoverSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/hoverPotion.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="keySelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/key.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="swordSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/Sword.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+            <RadioButton fx:id="wallSelect" focusTraversable="false" mnemonicParsing="false" onAction="#handleRadioButton" textAlignment="RIGHT" toggleGroup="$itemchoices" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resource/Wall.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </RadioButton>
+         </children>
+      </GridPane>
+   </right>
+</BorderPane>

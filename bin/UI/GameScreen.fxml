@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane onKeyPressed="#handleKeyPressed" prefHeight="609.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <GridPane prefHeight="616.0" prefWidth="144.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="100.0" />
+         </BorderPane.margin>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="0.0" prefHeight="17.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="500.0" minHeight="10.0" prefHeight="391.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox maxHeight="-Infinity" prefHeight="440.0" prefWidth="144.0" spacing="15.0" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="LoadBtn" mnemonicParsing="false" onAction="#handleLoadBtn" prefHeight="19.0" prefWidth="138.0" text="Back">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="137.0" text="Learn">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="restartBtn" mnemonicParsing="false" onAction="#handleRestartBtn" text="Restart">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#handleHomeBtn" prefHeight="59.0" prefWidth="143.0" text="Home">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ExitBtn" mnemonicParsing="false" onAction="#handleExitBtn" prefHeight="59.0" prefWidth="142.0" text="Exit">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <Label prefHeight="73.0" prefWidth="118.0" text="Menu" textAlignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+   </right>
+   <center>
+      <GridPane fx:id="mapPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="TOP_LEFT">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <bottom>
+      <GridPane fx:id="bagPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="136.0" prefWidth="764.0" BorderPane.alignment="BOTTOM_LEFT">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="445.0" minWidth="0.0" prefWidth="58.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.0" minWidth="10.0" prefWidth="35.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.0" minWidth="10.0" prefWidth="52.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.0" minWidth="10.0" prefWidth="38.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.0" minWidth="0.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.0" minWidth="10.0" prefWidth="52.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.0" minWidth="10.0" prefWidth="69.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.0" minWidth="10.0" prefWidth="54.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.0" minWidth="10.0" prefWidth="64.0" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="621.0" minWidth="10.0" prefWidth="62.0" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="621.0" minWidth="10.0" prefWidth="209.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resource/arrow.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resource/Sword.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../Resource/bomb_unlit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resource/Treasure.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../Resource/invinciblePotion.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resource/hoverPotion.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
+               <image>
+                  <Image url="@../Resource/key.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../Resource/blue_key.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8">
+               <image>
+                  <Image url="@../Resource/red_key.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="arrowNum" prefHeight="38.0" prefWidth="51.0" text="0" GridPane.columnIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="swordNum" prefHeight="38.0" prefWidth="51.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="bombNum" prefHeight="38.0" prefWidth="51.0" text="0" GridPane.columnIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="treasureNum" prefHeight="38.0" prefWidth="51.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="invinciblePotionNum" prefHeight="38.0" prefWidth="51.0" text="0" GridPane.columnIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="hoverPotionNum" prefHeight="38.0" prefWidth="51.0" text="0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="yellowKeyNum" prefHeight="38.0" prefWidth="51.0" text="0" GridPane.columnIndex="7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="blueKeyNum" prefHeight="38.0" prefWidth="51.0" text="0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="redKeyNum" prefHeight="38.0" prefWidth="51.0" text="0" GridPane.columnIndex="9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="40.0" prefWidth="164.0" text="Winning Condition" textAlignment="CENTER" GridPane.columnIndex="10">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>

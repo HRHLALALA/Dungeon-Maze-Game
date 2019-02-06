@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToggleButton fx:id="handleLevel1Btn" layoutX="19.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleLevel1Btn" text="Level 1" />
+      <ToggleButton fx:id="handleLevel4Btn" layoutX="19.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleLevel4Btn" text="Level 4" />
+      <ToggleButton fx:id="handleLevel3Btn" layoutX="170.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleLevel3Btn" text="Level 3" />
+      <ToggleButton fx:id="handleLevel5Btn" layoutX="95.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleLevel5Btn" text="Level 5" />
+      <ToggleButton fx:id="handleLevel6Btn" layoutX="170.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleLevel6Btn" text="Level 6" />
+      <ToggleButton fx:id="handleLevel2Btn" layoutX="95.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleLevel2Btn" text="Level 2" />
+      <Label layoutX="20.0" layoutY="11.0" prefHeight="45.0" prefWidth="299.0" text="Level Select">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="24.0" prefHeight="17.0" prefWidth="108.0" text="Level Preview">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button fx:id="backBtn" layoutX="19.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleBackBtn" prefHeight="36.0" prefWidth="58.0" text="Back" />
+      <Button fx:id="startBtn" layoutX="169.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleStartBtn" prefHeight="36.0" prefWidth="58.0" text="Start" />
+      <Pane layoutX="244.0" layoutY="58.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="327.0" fitWidth="342.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
