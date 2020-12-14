@@ -8,4 +8,8 @@
   * Jerry Xu
   * Eddie
   
+  
+ ## Design
+ ![](design.jpg)
+  
 
